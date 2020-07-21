@@ -1,0 +1,17 @@
+D:\gongzuokongjian\xiangmu2\ArcSoftFaceDemo-master\src\main\java\com\itboyst\facedemo\controller\FaceController.java
+D:\gongzuokongjian\xiangmu2\ArcSoftFaceDemo-master\src\main\java\com\itboyst\facedemo\util\UserRamCache.java
+D:\gongzuokongjian\xiangmu2\ArcSoftFaceDemo-master\src\main\java\com\itboyst\facedemo\factory\FaceEngineFactory.java
+D:\gongzuokongjian\xiangmu2\ArcSoftFaceDemo-master\src\main\java\com\itboyst\facedemo\dto\FaceDetectResDTO.java
+D:\gongzuokongjian\xiangmu2\ArcSoftFaceDemo-master\src\main\java\com\itboyst\facedemo\rpc\Response.java
+D:\gongzuokongjian\xiangmu2\ArcSoftFaceDemo-master\src\main\java\com\itboyst\facedemo\service\impl\FaceEngineServiceImpl.java
+D:\gongzuokongjian\xiangmu2\ArcSoftFaceDemo-master\src\main\java\com\itboyst\facedemo\rpc\ErrorCode.java
+D:\gongzuokongjian\xiangmu2\ArcSoftFaceDemo-master\src\main\java\com\itboyst\facedemo\enums\ErrorCodeEnum.java
+D:\gongzuokongjian\xiangmu2\ArcSoftFaceDemo-master\src\main\java\com\itboyst\facedemo\dto\FaceRecognitionResDTO.java
+D:\gongzuokongjian\xiangmu2\ArcSoftFaceDemo-master\src\main\java\com\itboyst\facedemo\controller\WebController.java
+D:\gongzuokongjian\xiangmu2\ArcSoftFaceDemo-master\src\main\java\com\itboyst\facedemo\rpc\GlobalExceptionHandler.java
+D:\gongzuokongjian\xiangmu2\ArcSoftFaceDemo-master\src\main\java\com\itboyst\facedemo\rpc\BusinessException.java
+D:\gongzuokongjian\xiangmu2\ArcSoftFaceDemo-master\src\main\java\com\itboyst\facedemo\entity\ProcessInfo.java
+D:\gongzuokongjian\xiangmu2\ArcSoftFaceDemo-master\src\main\java\com\itboyst\facedemo\service\FaceEngineService.java
+D:\gongzuokongjian\xiangmu2\ArcSoftFaceDemo-master\src\main\java\com\itboyst\facedemo\entity\UserCompareInfo.java
+D:\gongzuokongjian\xiangmu2\ArcSoftFaceDemo-master\src\main\java\com\itboyst\facedemo\Application.java
+D:\gongzuokongjian\xiangmu2\ArcSoftFaceDemo-master\src\main\java\com\itboyst\facedemo\util\Base64Util.java

@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e4bd27b3-f49e-4c66-8f6b-18e271363366" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ArcFace64.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/arcsoft-sdk-face-3.0.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itboyst/facedemo/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itboyst/facedemo/controller/FaceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itboyst/facedemo/controller/WebController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itboyst/facedemo/dto/FaceDetectResDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itboyst/facedemo/dto/FaceRecognitionResDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itboyst/facedemo/entity/ProcessInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itboyst/facedemo/entity/UserCompareInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itboyst/facedemo/enums/ErrorCodeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itboyst/facedemo/factory/FaceEngineFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itboyst/facedemo/rpc/BusinessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itboyst/facedemo/rpc/ErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itboyst/facedemo/rpc/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itboyst/facedemo/rpc/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itboyst/facedemo/service/FaceEngineService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itboyst/facedemo/service/impl/FaceEngineServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itboyst/facedemo/util/Base64Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itboyst/facedemo/util/UserRamCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/Image1-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/Image1-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/Image2-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/Image2-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/Image3-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/Image3-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/yang1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/zhao1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/zhaoyang.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/face_detect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/css/adminlte.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/css/adminlte.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/css/adminlte.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/css/adminlte.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.components.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.components.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.components.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.components.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.core.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.core.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.core.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.core.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.extra-components.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.extra-components.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.extra-components.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.extra-components.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.pages.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.pages.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.pages.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.pages.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.plugins.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.plugins.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.plugins.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.plugins.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/AdminLTELogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/avatar04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/avatar2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/avatar3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/avatar5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/boxed-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/boxed-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/credit/american-express.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/credit/cirrus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/credit/mastercard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/credit/mestro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/credit/paypal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/credit/paypal2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/credit/visa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/default-150x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/photo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/photo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/photo3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/photo4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/prod-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/prod-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/prod-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/prod-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/prod-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/user1-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/user2-160x160.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/user3-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/user4-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/user5-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/user6-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/user7-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/img/user8-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/js/adminlte.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/js/adminlte.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/js/adminlte.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/js/adminlte.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/js/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/js/pages/dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/js/pages/dashboard2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/admin-lte-3.0.2/dist/js/pages/dashboard3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/bootstrap-4.4.1-dist/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/bootstrap-4.4.1-dist/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/bootstrap-4.4.1-dist/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/bootstrap-4.4.1-dist/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/bootstrap-4.4.1-dist/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/bootstrap-4.4.1-dist/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/bootstrap-4.4.1-dist/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/bootstrap-4.4.1-dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/bootstrap-4.4.1-dist/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/bootstrap-4.4.1-dist/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/bootstrap-4.4.1-dist/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/bootstrap-4.4.1-dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/bootstrap-4.4.1-dist/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/bootstrap-4.4.1-dist/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/bootstrap-4.4.1-dist/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/bootstrap-4.4.1-dist/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/bootstrap-4.4.1-dist/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/bootstrap-4.4.1-dist/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/css/all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/css/all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/css/brands.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/css/brands.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/css/fontawesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/css/fontawesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/css/regular.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/css/regular.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/css/solid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/css/solid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/css/svg-with-js.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/css/svg-with-js.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/css/v4-shims.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/css/v4-shims.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/jquery-ui/AUTHORS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/jquery-ui/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/jquery-ui/external/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/jquery-ui/images/ui-icons_444444_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/jquery-ui/images/ui-icons_555555_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/jquery-ui/images/ui-icons_777620_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/jquery-ui/images/ui-icons_777777_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/jquery-ui/images/ui-icons_cc0000_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/jquery-ui/images/ui-icons_ffffff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/jquery-ui/jquery-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/jquery-ui/jquery-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/jquery-ui/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/jquery-ui/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/jquery-ui/jquery-ui.structure.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/jquery-ui/jquery-ui.structure.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/jquery-ui/jquery-ui.theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/jquery-ui/jquery-ui.theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/jquery/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/jquery/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/jquery/jquery.slim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/jquery/jquery.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/jquery/jquery.slim.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/popper/esm/popper-utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/popper/esm/popper-utils.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/popper/esm/popper-utils.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/popper/esm/popper-utils.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/popper/esm/popper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/popper/esm/popper.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/popper/esm/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/popper/esm/popper.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/popper/popper-utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/popper/popper-utils.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/popper/popper-utils.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/popper/popper-utils.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/popper/popper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/popper/popper.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/popper/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/popper/popper.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/popper/umd/popper-utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/popper/umd/popper-utils.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/popper/umd/popper-utils.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/popper/umd/popper-utils.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/popper/umd/popper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/popper/umd/popper.js.flow" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/popper/umd/popper.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/popper/umd/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/plugins/popper/umd/popper.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/common/common.macro.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/face_detect.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/face_recognition.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/face_similarity.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/arcsoft-face-1.0.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/arcsoft-face-1.0.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itboyst/facedemo/Application.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itboyst/facedemo/controller/FaceController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itboyst/facedemo/controller/WebController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itboyst/facedemo/dto/FaceDetectResDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itboyst/facedemo/dto/FaceRecognitionResDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itboyst/facedemo/entity/ProcessInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itboyst/facedemo/entity/UserCompareInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itboyst/facedemo/enums/ErrorCodeEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itboyst/facedemo/factory/FaceEngineFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itboyst/facedemo/rpc/BusinessException$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itboyst/facedemo/rpc/BusinessException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itboyst/facedemo/rpc/ErrorCode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itboyst/facedemo/rpc/GlobalExceptionHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itboyst/facedemo/rpc/Response.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itboyst/facedemo/service/FaceEngineService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itboyst/facedemo/service/impl/FaceEngineServiceImpl$CompareFaceTask.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itboyst/facedemo/service/impl/FaceEngineServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itboyst/facedemo/util/Base64Util.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itboyst/facedemo/util/UserRamCache$UserInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itboyst/facedemo/util/UserRamCache.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/Image1-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/Image1-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/Image2-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/Image2-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/Image3-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/Image3-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/yang1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/zhao1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/zhaoyang.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/face_detect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/css/adminlte.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/css/adminlte.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/css/adminlte.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/css/adminlte.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.components.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.components.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.components.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.components.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.core.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.core.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.core.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.core.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.extra-components.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.extra-components.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.extra-components.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.extra-components.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.pages.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.pages.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.pages.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.pages.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.plugins.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.plugins.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.plugins.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/css/alt/adminlte.plugins.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/AdminLTELogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/avatar04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/avatar2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/avatar3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/avatar5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/boxed-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/boxed-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/credit/american-express.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/credit/cirrus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/credit/mastercard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/credit/mestro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/credit/paypal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/credit/paypal2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/credit/visa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/default-150x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/photo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/photo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/photo3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/photo4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/prod-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/prod-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/prod-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/prod-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/prod-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/user1-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/user2-160x160.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/user3-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/user4-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/user5-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/user6-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/user7-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/img/user8-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/js/adminlte.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/js/adminlte.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/js/adminlte.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/js/adminlte.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/js/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/js/pages/dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/js/pages/dashboard2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/admin-lte-3.0.2/dist/js/pages/dashboard3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/bootstrap-4.4.1-dist/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/bootstrap-4.4.1-dist/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/bootstrap-4.4.1-dist/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/bootstrap-4.4.1-dist/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/bootstrap-4.4.1-dist/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/bootstrap-4.4.1-dist/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/bootstrap-4.4.1-dist/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/bootstrap-4.4.1-dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/bootstrap-4.4.1-dist/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/bootstrap-4.4.1-dist/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/bootstrap-4.4.1-dist/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/bootstrap-4.4.1-dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/bootstrap-4.4.1-dist/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/bootstrap-4.4.1-dist/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/bootstrap-4.4.1-dist/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/bootstrap-4.4.1-dist/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/bootstrap-4.4.1-dist/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/bootstrap-4.4.1-dist/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/css/all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/css/all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/css/brands.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/css/brands.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/css/fontawesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/css/fontawesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/css/regular.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/css/regular.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/css/solid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/css/solid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/css/svg-with-js.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/css/svg-with-js.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/css/v4-shims.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/css/v4-shims.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/jquery-ui/AUTHORS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/jquery-ui/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/jquery-ui/external/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/jquery-ui/images/ui-icons_444444_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/jquery-ui/images/ui-icons_555555_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/jquery-ui/images/ui-icons_777620_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/jquery-ui/images/ui-icons_777777_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/jquery-ui/images/ui-icons_cc0000_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/jquery-ui/images/ui-icons_ffffff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/jquery-ui/jquery-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/jquery-ui/jquery-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/jquery-ui/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/jquery-ui/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/jquery-ui/jquery-ui.structure.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/jquery-ui/jquery-ui.structure.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/jquery-ui/jquery-ui.theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/jquery-ui/jquery-ui.theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/jquery/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/jquery/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/jquery/jquery.slim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/jquery/jquery.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/jquery/jquery.slim.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/popper/esm/popper-utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/popper/esm/popper-utils.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/popper/esm/popper-utils.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/popper/esm/popper-utils.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/popper/esm/popper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/popper/esm/popper.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/popper/esm/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/popper/esm/popper.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/popper/popper-utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/popper/popper-utils.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/popper/popper-utils.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/popper/popper-utils.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/popper/popper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/popper/popper.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/popper/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/popper/popper.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/popper/umd/popper-utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/popper/umd/popper-utils.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/popper/umd/popper-utils.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/popper/umd/popper-utils.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/popper/umd/popper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/popper/umd/popper.js.flow" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/popper/umd/popper.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/popper/umd/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/plugins/popper/umd/popper.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/common/common.macro.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/face_detect.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/face_recognition.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/face_similarity.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/人脸流程.png" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="D:/" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="1.8" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1eiWQ5OdoHqgTpXW6K2GCJQTTVq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/images" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\gongzuokongjian\xiangmu2\ArcSoftFaceDemo-master\src\main\resources\static\images" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="arcsoft-face" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itboyst.facedemo.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e4bd27b3-f49e-4c66-8f6b-18e271363366" name="Default Changelist" comment="" />
+      <created>1594804874478</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594804874478</updated>
+      <workItem from="1594804876035" duration="2960000" />
+      <workItem from="1594859951214" duration="5544000" />
+      <workItem from="1594879975960" duration="745000" />
+      <workItem from="1594880973157" duration="32000" />
+      <workItem from="1594898085610" duration="600000" />
+      <workItem from="1594946143962" duration="609000" />
+      <workItem from="1594952316180" duration="722000" />
+      <workItem from="1594955552442" duration="1596000" />
+      <workItem from="1594966805653" duration="91000" />
+      <workItem from="1594972139611" duration="7000" />
+      <workItem from="1595035978198" duration="5144000" />
+      <workItem from="1595043622717" duration="714000" />
+      <workItem from="1595051149267" duration="819000" />
+      <workItem from="1595205318823" duration="5983000" />
+      <workItem from="1595214265401" duration="238000" />
+      <workItem from="1595215541899" duration="887000" />
+      <workItem from="1595292588302" duration="431000" />
+      <workItem from="1595293591536" duration="219000" />
+      <workItem from="1595316821831" duration="514000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
